@@ -1,5 +1,7 @@
 // script.js
 
+console.log('testing..');
+
 document.addEventListener("DOMContentLoaded", () => {
   /* ===== FAQ ACCORDION (one open at a time) ===== */
   const faqItems = document.querySelectorAll(".faq-item");
