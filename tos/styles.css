@@ -1,0 +1,46 @@
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 32px 20px 128px 20px;
+}
+
+h1 {
+    color: var(--color-pink);
+    font-family: Impact;
+    font-size: 84px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.description, .block {
+    color: #5C5F6D;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+.block h2 {
+    color: #000;
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .description {
+        margin-top: 24px;
+    }
+
+    .description, .block {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .block h2 {
+        font-size: 18px;
+    }
+}

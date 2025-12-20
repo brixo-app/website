@@ -1,0 +1,285 @@
+.top-right-container {
+    display: none;
+    gap: 12px;
+}
+
+.nav-link {
+    align-items: center;
+    color: var(--color-muted);
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 32px 20px 128px 20px;
+    text-align: center;
+}
+
+.hero-illustration {
+    width: 160px;
+    height: 120px;
+    margin: 0 auto 19px;
+    background: #eee; /* image placeholder */
+    border-radius: 12px;
+}
+
+h1 {
+    font-family: Impact;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-bottom: 26px;
+}
+
+.subtitle {
+    color: var(--color-muted);
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 32px;
+}
+
+/* ---------------- OPTIONS ---------------- */
+
+.options {
+    max-width: 420px;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.option.checked {
+    border-color: var(--color-pink);
+}
+
+
+.option input {
+    margin-right: 12px;
+}
+
+.option-left {
+    color: #37352F;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.option .radio {
+    background-image: url("https://ik.imagekit.io/w7mufntzo/website/icons/circle.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.option.checked .radio {
+    background-image: url("https://ik.imagekit.io/w7mufntzo/website/icons/check.svg");
+}
+
+.option .badge {
+    background: #ffe5eb;
+    color: var(--color-pink);
+    font-size: 11px;
+    padding: 4px 6px;
+    border-radius: 6px;
+}
+
+.option .price-info {
+    text-align: right;
+}
+
+.option .price {
+    color: #5C5F6D;
+    font-size: 38px;
+    font-weight: 900;
+    margin-right: 6px;
+}
+.option .price span {
+    font-size: 24px;
+    position: relative;
+    top: -12px;
+}
+.option.checked .price {
+    color: var(--color-pink);
+}
+.option .price-caption {
+    color: #777;
+    font-size: 14px;
+}
+
+.cta {
+    border-radius: 8px;
+    max-width: 420px;
+    width: 100%;
+}
+
+.cta.inactive {
+    background: #9094A0;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.terms {
+    color: #5C5F6D;
+    font-size: 16px;
+    color: var(--color-muted);
+    line-height: 24px;
+    margin-top: 14px;
+}
+
+.terms a {
+    text-decoration: underline;
+}
+
+/* ---------------- TRUST ---------------- */
+
+.trust {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin: 24px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-muted);
+}
+
+.trust-text {
+    display: flex;
+    gap: 16px;
+    text-align: left;
+}
+
+.trust-logos {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.trust-logo {
+    /* width: 48px; */
+    height: 24px;
+}
+
+.trust-logo img {
+    height: 100%;
+}
+
+/* ---------------- WHY SECTION ---------------- */
+
+.why {
+    margin-top: 128px;
+}
+
+.why h2 {
+    color: #26272B;
+    font-family: Impact;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 1px;;
+    margin-bottom: 32px;
+}
+
+.why h2 span {
+    font-size: 22px;
+    position: relative;
+    top: -8px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-card {
+    text-align: left;
+}
+
+.why-img {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background: #F7F8F8; /* placeholder */
+    border: 1px solid #EEEEF0;
+    margin: 0 auto 16px;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.why-title {
+    color: var(--color-pink);
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.why-text {
+    font-size: 16px;
+    color: var(--color-muted);
+}
+
+@media (max-width: 767px) {
+    .top-right-container {
+        display: flex;
+    }
+
+    .hero-illustration {
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .option .price {
+        font-size: 24px;
+    }
+    .option .price span {
+        font-size: 16px;
+        top: -8px;
+    }
+
+    .option .desktop-only {
+        display: none;
+    }
+
+    .option-left {
+        font-size: 14px;
+    }
+
+    .trust {
+        flex-direction: column;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+
+    .why-title {
+        font-size: 20px;
+    }
+
+    .why {
+        margin-top: 84px;
+    }
+    
+    .why h2 {
+        font-size: 32px;
+    }
+}

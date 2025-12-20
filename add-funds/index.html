@@ -1,0 +1,203 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+    <!-- Meta Title -->
+  <title>BRYB - Add Funds</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/common.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/w7mufntzo/website/logo.ico?v=1">
+</head>
+<body>
+
+  <!-- ========= MOBILE MENU OVERLAY ========= -->
+  <div class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner container">
+      <div class="mobile-menu-header">
+        <a href="/" class="logo">
+          <img src="https://ik.imagekit.io/w7mufntzo/website/logo.svg" alt="BRYB logo" />
+        </a>
+        <button class="mobile-menu-close" aria-label="Close menu">
+          <span class="close-icon">×</span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu-nav">
+        <a class="mobile-menu-link logout" data-menu-link>
+          <span>Logout</span>
+          <span class="chevron">&rsaquo;</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ========= HEADER ========= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="https://ik.imagekit.io/w7mufntzo/website/logo.svg" alt="BRYB logo" />
+      </a>
+ 
+      <nav class="nav-desktop">
+        <a class="nav-link">
+          <img src="https://ik.imagekit.io/w7mufntzo/website/icons/user.svg" />
+          <span class="username"></span>
+        </a>
+        <a class="btn btn-primary nav-cta logout">
+          Logout
+        </a>
+      </nav>
+
+      <div class="top-right-container">
+        <a class="nav-link">
+          <span class="username"></span>
+        </a>
+        <button class="nav-toggle" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero-illustration">
+      <img src="https://ik.imagekit.io/w7mufntzo/website/add-funds/hero.png" />
+    </div>
+
+    <h1>Choose How You Want To<br />Add Funds To BRYB Wallet</h1>
+
+    <p class="subtitle">
+      BRYB is <strong class="accent">free to use.</strong>
+      You can add money using a credit card (always enabled) or UPI
+      (requires one-time set up fee)
+    </p>
+
+    <div class="options">
+      <label class="option">
+        <div class="option-left">
+          <!-- <input type="radio" name="funding" value="upi" /> -->
+          <a class="radio" value="upi"></a>
+          <span>Enable UPI</span>
+        </div>
+        <div class="price-info">
+          <div class="price"><span>₹</span>99</div>
+          <div class="price-caption">One time fee</div>
+        </div>
+      </label>
+
+      <label class="option">
+        <div class="option-left">
+          <!-- <input type="radio" name="funding" value="card" /> -->
+           <a class="radio" value="card"></a>
+          <span>Credit Card<span class="desktop-only"> only</span></span>
+          <span class="badge">2.5% Transaction fee</span>
+        </div>
+        <div class="price"><span>₹</span>0</div>
+      </label>
+    </div>
+
+    <button class="btn btn-primary cta inactive" id="ctaBtn">Enable UPI for ₹99 (one-time)</button>
+
+    <div class="terms">
+      By continuing you agree with our <a class="accent" href="/tos">Terms of Service.</a><br />
+      You can enable UPI at later as well.
+    </div>
+
+    <div class="trust">
+      <div class="trust-text">
+        <img src="https://ik.imagekit.io/w7mufntzo/website/icons/check.svg" />
+        <div>
+          <span class="accent">BRYB is secured</span><br />
+          100% RBI Compliant
+        </div>
+      </div>
+      <div class="trust-logos">
+        <div class="trust-logo">
+          <img src="https://ik.imagekit.io/w7mufntzo/website/brands/upi.png?v=1" />
+        </div>
+        <div class="trust-logo">
+          <img src="https://ik.imagekit.io/w7mufntzo/website/brands/mastercard.png?v=1" />
+        </div>
+        <div class="trust-logo">
+          <img src="https://ik.imagekit.io/w7mufntzo/website/brands/visa.png?v=1" />
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY -->
+    <section class="why">
+      <h2>Why the one-time <span>₹</span>99 setup fee?</h2>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-img">
+            <img src="https://ik.imagekit.io/w7mufntzo/website/add-funds/why-1.png" />
+          </div>
+          <div class="why-title">Credit cards charge you every time. UPI doesn’t.</div>
+          <div class="why-text">
+            Credit cards cost 2–3% on every transaction. Since UPI is free,
+            this one-time fee helps set up your account.
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-img">
+            <img src="https://ik.imagekit.io/w7mufntzo/website/add-funds/why-2.png" />
+          </div>
+          <div class="why-title">Premium credit card-like rewards on UPI</div>
+          <div class="why-text">
+            Earn premium credit card rewards on UPI payments once it’s set up.
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div class="why-img">
+            <img src="https://ik.imagekit.io/w7mufntzo/website/add-funds/why-3.png" />
+          </div>
+          <div class="why-title">₹99 once for ₹9,000 worth rewards every year</div>
+          <div class="why-text">
+            Pay ₹99 once. Earn rewards worth up to ₹9,000 every year.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="/" class="logo footer-logo">
+            <img src="https://ik.imagekit.io/w7mufntzo/website/logo.svg" alt="BRYB logo" />
+          </a>
+          <p class="footer-tagline">
+            Pronounced <span class="accent">Bribe ;)</span><br />
+            Stands for <span class="strong">better rewards on your bills</span>
+          </p>
+          <p class="footer-line">
+            From today, good financial behaviour deserves a
+            <span class="accent">BRYB</span>
+          </p>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-meta">
+        <p>Onhouse Technologies Pvt Ltd</p>
+        <a href="/tos">Term of Services</a>
+        <p>For more queries: <a href="mailto:care@getbryb.com">care@getbryb.com</a></p>
+      </div>
+    </div>
+
+    <script src="/common.js"></script>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
