@@ -230,7 +230,7 @@ h1 {
 
 .why-text {
     font-size: 16px;
-    color: var(--color-muted);
+    color: #1F1F1F;
 }
 
 @media (max-width: 767px) {

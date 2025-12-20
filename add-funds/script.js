@@ -23,7 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
       option.classList.add("checked");
 
       // Make button active
-      ctaBtn.classList.remove("inactive")
+      const value = option.getAttribute('value');
+      if (value === 'upi') {
+        ctaBtn.classList.remove("inactive")
+      } else {
+        ctaBtn.classList.add("inactive")
+      }
     });
   });  
 
