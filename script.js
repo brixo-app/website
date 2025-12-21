@@ -1,6 +1,6 @@
 // script.js
 
-// console.log('testing..');
+// console.log('testing..1');
 
 document.addEventListener("DOMContentLoaded", () => {
   /* ===== FAQ ACCORDION (one open at a time) ===== */
